@@ -29,7 +29,7 @@ function fetchGitHubInformation(event) {
         </div>`);
         
     $.when(
-        $.getJSON('https://api.github.com/users/${username}')
+        $.getJSON('https://api.github.com/users/${username}'+ '?client_id=57261bf4094750b35a7b&client_secret=ce2841b62be5743268e021f2d5520c194313024e')
         ).then(
             function(response) {
                 var userData = response;
